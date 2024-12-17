@@ -1,0 +1,175 @@
+body{
+    margin: 0%;
+    
+    background-image: url(fondo\ real\ madrid.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+}
+.banner{
+    height: 75px;
+    width: 100%;
+    color: black; 
+    text-align: center;
+    background-color: rgb(3, 0, 90);
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: fantasy;
+    
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+.navbar a{
+    
+    color:rgb(162, 163, 164);
+    padding: 40px;
+    text-align: center;
+    justify-items: center;
+    text-decoration:dashed;
+    gap:20px;
+    padding-top: 40px;
+    transition: color 0.3s;
+    cursor: pointer;
+    font-family: fantasy;
+}
+.navbar a:hover{
+    background-color: rgb(162, 163, 164);
+    color:black;
+    border-radius: 15px;
+    margin: 0%;
+
+    
+}
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto; 
+      padding: 10px 0; 
+      text-align: center;
+    }
+  
+    .navbar a {
+      padding: 10px 0; 
+      font-size: 14px;
+      gap: 0; 
+    }
+  }
+
+  .agrupado {
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.contacto {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.info-contacto {
+    flex: 1;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.info-contacto h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.info-contacto p {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.info-contacto a {
+    color: rgb(162, 163, 164);
+    text-decoration: none;
+}
+
+.formulario-contacto {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(162, 163, 164);
+    border-radius: 10px;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    margin-top: 10px;
+    color: black;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.formulario-contacto button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(115, 115, 115);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .info-contacto, 
+    .formulario-contacto {
+        padding: 10px; 
+    }
+
+    .info-contacto h2 {
+        font-size: 18px; 
+    }
+
+    .info-contacto p {
+        font-size: 16px; 
+    }
+
+    .formulario-contacto button {
+        font-size: 16px;
+        padding: 8px; 
+    }
+}
+

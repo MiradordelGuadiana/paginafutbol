@@ -1,0 +1,131 @@
+body{
+    margin: 0%;
+    background-image: url(fondo\ real\ madrid.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+}
+.banner{
+    height: 75px;
+    width: 100%;
+    color: black; 
+    text-align: center;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: fantasy;
+    
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+.navbar a{
+    
+    color:rgb(162, 163, 164);
+    padding: 40px;
+    text-align: center;
+    justify-items: center;
+    text-decoration:dashed;
+    gap:20px;
+    padding-top: 40px;
+    transition: color 0.3s;
+    cursor: pointer;
+    font-family: fantasy;
+}
+.navbar a:hover{
+    background-color: rgb(162, 163, 164);
+    color:black;
+    border-radius: 15px;
+    margin: 0%;
+
+    
+}
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; 
+      height: auto; 
+      padding: 10px 0;
+      text-align: center; 
+    }
+  
+    .navbar a {
+      padding: 10px 0; 
+      font-size: 14px; 
+      gap: 0; 
+    }
+  }
+
+
+.jugadores h2 {
+    height: 30px;
+    width: 100%;
+    color: rgb(162, 163, 164); 
+    text-align: center;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 182px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: fantasy;
+    
+
+}
+
+/* Contenedor de la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+   
+}
+
+.jugador {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.jugador img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.jugador:hover {
+    transform: scale(1.05); 
+}
+
+.jugador p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

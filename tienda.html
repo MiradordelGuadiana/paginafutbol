@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid</title>
+    <link rel="icon" href="logo_realmadrid.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <div class="banner"><h1>REAL MADRID</h1></div>
+    
+    <div class="navbar">
+        
+        <a href="realmadrid.html">INICIO</a>
+        <a href="plantilla.html">PLANTILLA</a>
+        <a href="palmares.html">PALMARÉS</a>
+        <a href="tienda.html">TIENDA</a>
+        <a href="contactanos.html">CONTÁCTANOS</a>
+        
+    </div>
+    <header>
+        <h1>TIENDA ONLINE</h1>
+        <button id="ver-carrito">Carrito (0)</button>
+    </header>
+    <main class="productos">
+        <div class="producto">
+            <img src="camiseta.jpg" alt="Producto 1">
+            <h2>1º Camiseta</h2>
+            <p>Precio: 120.00€</p>
+            <button onclick="agregarAlCarrito(1, '1º Camiseta', 120.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="camiseta2.jpg" alt="Producto 2">
+            <h2>2º Camiseta</h2>
+            <p>Precio: 120.00€</p>
+            <button onclick="agregarAlCarrito(2, '2º Camiseta', 120.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="chandal.jpg" alt="Producto 2">
+            <h2>Chándal</h2>
+            <p>Precio: 130.00€</p>
+            <button onclick="agregarAlCarrito(3, 'Chandal', 130.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="abrigo.jpg" alt="Producto 2">
+            <h2>Abrigo</h2>
+            <p>Precio: 110.00€</p>
+            <button onclick="agregarAlCarrito(4, 'Abrigo', 110.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="mochila.jpg" alt="Producto 2">
+            <h2>Mochila</h2>
+            <p>Precio: 80.00€</p>
+            <button onclick="agregarAlCarrito(5, 'Mochila', 80.00)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="gorra.jpg" alt="Producto 2">
+            <h2>Gorra</h2>
+            <p>Precio: 20.00€</p>
+            <button onclick="agregarAlCarrito(6, 'Gorra', 20.00)">Agregar al Carrito</button>
+        </div><div class="producto">
+            <img src="botella.jpg" alt="Producto 2">
+            <h2>Botella</h2>
+            <p>Precio: 15.00€</p>
+            <button onclick="agregarAlCarrito(7, 'Botella', 15.00)">Agregar al Carrito</button>
+        </div>
+        
+       
+    </main>
+    <div id="carrito-modal" class="modal oculto">
+        <div class="modal-contenido">
+            <h2>Carrito</h2>
+            <ul id="carrito-lista"></ul>
+            <p>Total: €<span id="carrito-total">0.00</span></p>
+            <button onclick="procesarCompra()">Comprar</button>
+            <button onclick="cerrarCarrito()">Cerrar</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
